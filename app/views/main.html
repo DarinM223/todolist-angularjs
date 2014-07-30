@@ -16,11 +16,13 @@
   <br>
 
   <!-- TODO list -->
-  <p class="input-group" ng-repeat="todo in todolist">
-    <input type="text" ng-model="todo" class="form-control"/>
-    <span class="input-group-btn">
-      <button class="btn btn-danger" ng-click="removeTodo($index)" 
-          aria-label="Remove">X</button>
-    </span>
-  </p>
+  <div ui-sortable ng-model="todolist">
+    <p class="input-group" ng-repeat="todo in todolist" style="padding:5px 10px; cursor: move;">
+      <input type="text" ng-model="todo" class="form-control"/>
+      <span class="input-group-btn">
+        <button class="btn btn-danger" ng-click="removeTodo($index)" 
+            aria-label="Remove">X</button>
+      </span>
+    </p>
+  </div> 
 </div>

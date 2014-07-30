@@ -15,7 +15,9 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    // AngularJS sort divs by dragging them around
+    'ui.sortable'
   ])
   .config(function ($routeProvider) {
     $routeProvider
