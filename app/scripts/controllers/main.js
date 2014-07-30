@@ -9,4 +9,14 @@
  */
 angular.module('todolistClientApp')
   .controller('MainCtrl', function ($scope) {
+    $scope.todolist = [];
+
+    $scope.addTodo = function() {
+      $scope.todolist.unshift($scope.todo);
+      $scope.todo = '';
+    };
+
+    $scope.removeTodo = function($index) {
+      $scope.todolist.splice($index, 1);
+    };
   });
