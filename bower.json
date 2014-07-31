@@ -12,7 +12,8 @@
     "angular-animate": "1.2.16",
     "angular-touch": "1.2.16",
     "angular-route": "1.2.16",
-    "angular-ui-sortable": "~0.12.8"
+    "angular-ui-sortable": "~0.12.8",
+    "jspdf": "~1.0.178"
   },
   "devDependencies": {
     "angular-mocks": "1.2.16",
