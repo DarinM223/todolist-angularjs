@@ -17,13 +17,17 @@ angular
     'ngSanitize',
     'ngTouch',
     // AngularJS sort divs by dragging them around
-    'ui.sortable'
+    'ui.sortable',
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
+      })
+      .when('/generate', {
+        templateUrl: 'views/generate.html',
+        controller: 'GenCtrl'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
